@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recomendador de Películas IA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    select, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    #resultado {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+      color: #006400;
+    }
+  </style>
+</head>
+<body>
+  <h1>Recomendador de Películas 🎥</h1>
+  <form id="formulario">
+    <label for="genero">¿Qué género prefieres?</label>
+    <select id="genero">
+      <option value="ciencia ficción">Ciencia Ficción</option>
+      <option value="romántico">Romántico</option>
+      <option value="animación">Animación</option>
+    </select>
+
+    <label for="mood">¿Cómo te sientes hoy?</label>
+    <select id="mood">
+      <option value="emocionado">Emocionado/a</option>
+      <option value="triste">Triste</option>
+      <option value="feliz">Feliz</option>
+    </select>
+
+    <button type="submit">Recomendar</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script>
+    // Lista de películas con género y estado de ánimo asociados
+    const peliculas = [
+      { titulo: "Inception", genero: "ciencia ficción", mood: "emocionado" },
+      { titulo: "Interstellar", genero: "ciencia ficción", mood: "triste" },
+      { titulo: "The Notebook", genero: "romántico", mood: "triste" },
+      { titulo: "La La Land", genero: "romántico", mood: "feliz" },
+      { titulo: "Zootopia", genero: "animación", mood: "feliz" },
+      { titulo: "Coco", genero: "animación", mood: "triste" }
+    ];
+
+    // Obtener referencias al formulario y resultado
+    const form = document.getElementById("formulario");
+    const resultado = document.getElementById("resultado");
+
+    // Al enviar el formulario, se ejecuta esta función
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Evita que se recargue la página
+
+      const genero = document.getElementById("genero").value;
+      const mood = document.getElementById("mood").value;
+
+      // Buscar una película que coincida con las selecciones
+      const recomendacion = peliculas.find(
+        (peli) => peli.genero === genero && peli.mood === mood
+      );
+
+      // Mostrar la recomendación o un mensaje alternativo
+      if (recomendacion) {
+        resultado.textContent = `Te recomendamos: "${recomendacion.titulo}"`;
+      } else {
+        resultado.textContent = "No encontramos una película para ti... 😔";
+      }
+    });
+  </script>
+</body>
+</html>
