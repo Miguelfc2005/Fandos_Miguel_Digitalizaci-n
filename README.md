@@ -5,7 +5,6 @@ Este es un proyecto de desarrollo web que utiliza una inteligencia artificial se
 - Género favorito del usuario.
 - Estado de ánimo actual.
 
----
 
 ## 🌐 Tecnologías utilizadas
 
@@ -13,8 +12,7 @@ Este es un proyecto de desarrollo web que utiliza una inteligencia artificial se
 - **CSS3**: Para los estilos.
 - **JavaScript**: Para la lógica y simulación de IA.
 - **IA básica**: Implementación basada en reglas (condiciones) para seleccionar una película de una lista.
-
----
+  
 
 ## 🚀 ¿Cómo funciona?
 
@@ -23,19 +21,18 @@ Este es un proyecto de desarrollo web que utiliza una inteligencia artificial se
 3. Al hacer clic en el botón “Recomendar”, se ejecuta una función que analiza ambas respuestas.
 4. Se muestra una película adecuada según una lista predefinida.
 
----
+
 
 ## 📁 Archivos del proyecto
 
 - `index.html` → Página principal con HTML, CSS y JS integrados.
 - `README.md` → Este documento con toda la explicación.
 
----
 
 ## 📷 Vista previa
 ![Captura](file:///home/daw/Im%C3%A1genes/Capturas%20de%20pantalla/Captura%20desde%202025-04-07%2009-47-54.png)
 
----
+
 
 ## 🧠 Lógica de IA
 
