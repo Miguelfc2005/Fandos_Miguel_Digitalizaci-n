@@ -62,40 +62,7 @@
 
   <div id="resultado"></div>
 
-  <script>
-    // Lista de películas con género y estado de ánimo asociados
-    const peliculas = [
-      { titulo: "Inception", genero: "ciencia ficción", mood: "emocionado" },
-      { titulo: "Interstellar", genero: "ciencia ficción", mood: "triste" },
-      { titulo: "The Notebook", genero: "romántico", mood: "triste" },
-      { titulo: "La La Land", genero: "romántico", mood: "feliz" },
-      { titulo: "Zootopia", genero: "animación", mood: "feliz" },
-      { titulo: "Coco", genero: "animación", mood: "triste" }
-    ];
-
-    // Obtener referencias al formulario y resultado
-    const form = document.getElementById("formulario");
-    const resultado = document.getElementById("resultado");
-
-    // Al enviar el formulario, se ejecuta esta función
-    form.addEventListener("submit", function (event) {
-      event.preventDefault(); // Evita que se recargue la página
-
-      const genero = document.getElementById("genero").value;
-      const mood = document.getElementById("mood").value;
-
-      // Buscar una película que coincida con las selecciones
-      const recomendacion = peliculas.find(
-        (peli) => peli.genero === genero && peli.mood === mood
-      );
-
-      // Mostrar la recomendación o un mensaje alternativo
-      if (recomendacion) {
-        resultado.textContent = `Te recomendamos: "${recomendacion.titulo}"`;
-      } else {
-        resultado.textContent = "No encontramos una película para ti... 😔";
-      }
-    });
-  </script>
+  <!-- Conexión al JS externo -->
+  <script src="firebase.js"></script>
 </body>
 </html>
