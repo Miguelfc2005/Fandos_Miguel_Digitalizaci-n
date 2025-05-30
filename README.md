@@ -42,3 +42,6 @@ Se usa una lista de películas con `género` y `estado de ánimo`, y se busca co
 const recomendacion = peliculas.find(
   (peli) => peli.genero === genero && peli.mood === mood
 );
+
+## Link Página
+https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/
