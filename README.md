@@ -1,6 +1,7 @@
 # 🎥 Recomendador de Películas con IA
 
-🔗 [Ver Página en Vivo]([https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/]) 
+🔗 Ver Página:
+https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/ 
 
 
 
