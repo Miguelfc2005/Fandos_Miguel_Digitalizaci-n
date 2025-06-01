@@ -1,3 +1,6 @@
+## Link Página
+https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/
+
 # 🎥 Recomendador de Películas con IA
 
 Este es un proyecto de desarrollo web que utiliza una inteligencia artificial sencilla para recomendar películas en función de dos criterios:
@@ -42,6 +45,3 @@ Se usa una lista de películas con `género` y `estado de ánimo`, y se busca co
 const recomendacion = peliculas.find(
   (peli) => peli.genero === genero && peli.mood === mood
 );
-
-## Link Página
-https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/
