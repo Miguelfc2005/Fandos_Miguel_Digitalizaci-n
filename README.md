@@ -81,6 +81,7 @@ bash
 Copiar
 Editar
 git clone https://github.com/tu-usuario/recomendador-peliculas.git
+
 📷 Vista previa
 ![image](https://github.com/user-attachments/assets/6a853f8a-e47c-487c-840a-d6432f40b013)
 
