@@ -1,8 +1,8 @@
 # 🎥 Recomendador de Películas con IA
 
-🔗 [Ver Página en Vivo](#) <!-- Añade aquí el enlace si lo tienes desplegado -->
+🔗 [Ver Página en Vivo]([#](https://miguelfc2005.github.io/Fandos_Miguel_Digitalizaci-n/)) 
 
----
+
 
 ## Descripción
 
@@ -13,7 +13,6 @@ Este proyecto web permite al usuario recibir recomendaciones de películas basad
 
 Utiliza una lógica sencilla de IA basada en reglas (condiciones) para filtrar películas almacenadas en una base de datos en tiempo real con Firebase Realtime Database.
 
----
 
 ## Tecnologías utilizadas
 
@@ -22,7 +21,7 @@ Utiliza una lógica sencilla de IA basada en reglas (condiciones) para filtrar p
 - **JavaScript:** Lógica de interacción y recomendación.
 - **Firebase Realtime Database:** Almacenamiento y consulta de datos en tiempo real.
 
----
+
 
 ## ¿Cómo funciona?
 
@@ -32,7 +31,7 @@ Utiliza una lógica sencilla de IA basada en reglas (condiciones) para filtrar p
 4. Si se encuentra, se muestra la recomendación.
 5. Si no, aparece un mensaje: "No encontramos una película para ti... 😔".
 
----
+
 
 ## Estructura del proyecto
 
@@ -45,7 +44,7 @@ yaml
 Copiar
 Editar
 
----
+
 
 ## Cómo configurarlo y desplegarlo
 
