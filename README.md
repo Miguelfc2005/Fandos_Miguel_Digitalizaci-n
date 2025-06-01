@@ -72,16 +72,10 @@ Editar
 }
 Clona este repositorio o descarga los archivos y abre index.html en tu navegador:
 
-bash
-Copiar
-Editar
-git clone https://github.com/tu-usuario/recomendador-peliculas.git
+git clone https://github.com/Miguelfc2005/recomendador-peliculas.git
 Abre index.html y usa la aplicación.
 
 Código de conexión a Firebase (firebase.js)
-js
-Copiar
-Editar
 // Importa Firebase desde CDN
 document.write('<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"><\/script>');
 document.write('<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"><\/script>');
@@ -132,9 +126,6 @@ window.addEventListener('load', () => {
   });
 });
 Código HTML (index.html)
-html
-Copiar
-Editar
 <!DOCTYPE html>
 <html lang="es">
 <head>
